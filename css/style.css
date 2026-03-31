@@ -1,5 +1,75 @@
 html, 
-body {
+body,
+* {
     margin: 0;
     padding: 0;
+}
+
+/* =================
+    Header 
+   ================= */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+}
+
+/* =================
+    Hero
+   ================= */
+.hero {
+    color: white;
+    background-image: url('../images/blog-image-hero.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    position: relative;
+}
+
+/* Mobile first - no max-width, text flows naturally */
+.hero-text {
+    position: absolute;
+    bottom: 0;
+    padding: 0 0 1.5em 1.5em;
+}
+
+
+/* =================
+    Blog Cards 
+   ================= */
+
+
+/* =================
+    Typography 
+   ================= */
+
+
+/* =================
+    Images 
+   ================= */
+
+
+/* =================
+    Footer 
+   ================= */
+
+/* =================
+    Media Queries
+   ================= */
+
+@media (min-width: 768px) {
+    .hero-text {
+        max-width: 600px;
+    }
 }
