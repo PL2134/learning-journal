@@ -5,6 +5,10 @@ body,
     padding: 0;
 }
 
+body {
+    background-color: #FAFAFA;
+}
+
 /* =================
     Header 
    ================= */
@@ -48,7 +52,20 @@ nav ul {
 /* =================
     Blog Cards 
    ================= */
+.blog-cards {
+    padding: 1em;
+    display: grid;
+    gap: 1em;
+}
 
+ .card img {
+    width: 100%;
+    display: block;
+ }
+
+.card-text {
+    padding: 1em;
+}
 
 /* =================
     Typography 
@@ -63,6 +80,13 @@ nav ul {
 /* =================
     Footer 
    ================= */
+footer {
+    color: #D7D7D7;
+    background-color: #202020;
+    text-align: center;
+    padding: 2.5em;
+}
+
 
 /* =================
     Media Queries
@@ -71,5 +95,9 @@ nav ul {
 @media (min-width: 768px) {
     .hero-text {
         max-width: 600px;
+    }
+
+    .blog-cards {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
